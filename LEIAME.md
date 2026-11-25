@@ -25,9 +25,22 @@ Abrir `data/catalogo.json` e editar. Campos principais de cada produto:
 
 - `ativo`: `false` tira o produto da vitrine.
 - `esgotado`: `true` mostra "Esgotado" e bloqueia a compra.
-- `imagem`: caminho da foto, por exemplo `imagens/sugar-scrub.jpg`. Vazio mostra o emoji.
+- `categoria` e `tamanho`: aparecem acima do nome (ex.: "Esfoliante corporal · 250ml").
+- `embalagem`: desenho mostrado enquanto não há foto. Opções: `pote`, `pump`, `spray`, `lata`, `frasco`, `barra`. O desenho pega as cores da fragrância escolhida.
+- `fotos`: lista de fotos do produto (o admin vai preencher isso). Cada foto:
+  `{"src": "imagens/produtos/sugar-scrub-amora-{w}.webp", "larguras": [400, 800], "fragrancia": "amora", "tipo": "produto", "alt": "Sugar Scrub Amora 250ml"}`
+  - `{w}` vira cada largura; o navegador baixa só o tamanho necessário. Gerar os arquivos em WebP, proporção 4:5, com os nomes terminando em `-400.webp`, `-800.webp`.
+  - `fragrancia`: opcional. Com ela, a foto aparece quando a cliente escolhe aquela fragrância. Sem ela, vale para todas.
+  - `tipo`: `produto` (foto principal), `textura` (aparece ao passar o mouse) ou `uso`.
+  - Produto sem foto mostra o desenho da embalagem. Kits aceitam `fotos` do mesmo jeito.
 - `fragrancias`: lista de ids que existem em `fragrancias`.
 - `tag`: `hot` (mais vendido), `new` (novo) ou vazio.
+
+Outros campos:
+
+- `selos[].icone`: `folha`, `coelho`, `broto` ou `mao`.
+- `tema`: opcional. Troca as cores do site sem mexer no CSS, por exemplo `{"verde-escuro": "#3A2A4A", "dourado": "#D4A373"}`. Nomes aceitos: os mesmos das variáveis no início de `assets/style.css`. Vazio usa a paleta padrão.
+- `loja.site`: endereço público do site (usado nos dados para o Google). Ao trocar de domínio, atualizar também `og:url` e `og:image` no `index.html`.
 
 Cuidado com vírgulas e aspas, o JSON é rígido. Depois de editar, recarregar a página.
 

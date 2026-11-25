@@ -6,8 +6,10 @@
     "instagram": "https://www.instagram.com/oxecosmeticoos",
     "razaoSocial": "",
     "cnpjOuCpf": "",
-    "endereco": ""
+    "endereco": "",
+    "site": "https://treborhand.github.io/oxe-cosmeticos/"
   },
+  "tema": {},
   "banner": {
     "ativo": false,
     "mensagens": [
@@ -17,91 +19,271 @@
     ]
   },
   "selos": [
-    { "icone": "🌿", "texto": "100% Natural" },
-    { "icone": "🐰", "texto": "Cruelty Free" },
-    { "icone": "🌱", "texto": "Vegano" },
-    { "icone": "🤲", "texto": "Feito à Mão" }
+    {
+      "icone": "folha",
+      "texto": "100% Natural"
+    },
+    {
+      "icone": "coelho",
+      "texto": "Cruelty Free"
+    },
+    {
+      "icone": "broto",
+      "texto": "Vegano"
+    },
+    {
+      "icone": "mao",
+      "texto": "Feito à Mão"
+    }
   ],
   "fragrancias": [
-    { "id": "maracuja", "nome": "Maracujá", "tipo": "Tropical & fresco", "cores": ["#F5D76E", "#E8A020"] },
-    { "id": "seducao", "nome": "Sedução", "tipo": "Floral & marcante", "cores": ["#F48FB1", "#E91E8C"] },
-    { "id": "amora", "nome": "Amora", "tipo": "Frutado & doce", "cores": ["#EF9A9A", "#C0392B"] },
-    { "id": "banana-split", "nome": "Banana Split", "tipo": "Doce & cremoso", "cores": ["#FFF176", "#F9A825"] },
-    { "id": "vanilla-cream", "nome": "Vanilla Cream", "tipo": "Suave & aveludado", "cores": ["#FFF8E1", "#D4A96A"] },
-    { "id": "love-scent", "nome": "Love Scent", "tipo": "Romântico & delicado", "cores": ["#FCE4EC", "#C48B9F"] },
-    { "id": "natural", "nome": "Natural", "tipo": "", "cores": ["#E8F0E4", "#A8C49A"], "ocultarNaVitrine": true }
+    {
+      "id": "maracuja",
+      "nome": "Maracujá",
+      "tipo": "Tropical & fresco",
+      "cores": [
+        "#F5D76E",
+        "#E8A020"
+      ]
+    },
+    {
+      "id": "seducao",
+      "nome": "Sedução",
+      "tipo": "Floral & marcante",
+      "cores": [
+        "#F48FB1",
+        "#E91E8C"
+      ]
+    },
+    {
+      "id": "amora",
+      "nome": "Amora",
+      "tipo": "Frutado & doce",
+      "cores": [
+        "#EF9A9A",
+        "#C0392B"
+      ]
+    },
+    {
+      "id": "banana-split",
+      "nome": "Banana Split",
+      "tipo": "Doce & cremoso",
+      "cores": [
+        "#FFF176",
+        "#F9A825"
+      ]
+    },
+    {
+      "id": "vanilla-cream",
+      "nome": "Vanilla Cream",
+      "tipo": "Suave & aveludado",
+      "cores": [
+        "#FFF8E1",
+        "#D4A96A"
+      ]
+    },
+    {
+      "id": "love-scent",
+      "nome": "Love Scent",
+      "tipo": "Romântico & delicado",
+      "cores": [
+        "#FCE4EC",
+        "#C48B9F"
+      ]
+    },
+    {
+      "id": "natural",
+      "nome": "Natural",
+      "tipo": "",
+      "cores": [
+        "#E8F0E4",
+        "#A8C49A"
+      ],
+      "ocultarNaVitrine": true
+    }
   ],
   "destaques": [
-    { "produto": "sugar-scrub", "fragrancia": "maracuja", "rotulo": "Esfoliante Maracujá", "mais_vendido": true },
-    { "produto": "body-splash", "fragrancia": "seducao", "rotulo": "Sedução" },
-    { "produto": "sabonete-liquido", "fragrancia": "maracuja", "rotulo": "Maracujá" }
+    {
+      "produto": "sugar-scrub",
+      "fragrancia": "maracuja",
+      "rotulo": "Esfoliante Maracujá",
+      "mais_vendido": true
+    },
+    {
+      "produto": "body-splash",
+      "fragrancia": "seducao",
+      "rotulo": "Sedução"
+    },
+    {
+      "produto": "sabonete-liquido",
+      "fragrancia": "maracuja",
+      "rotulo": "Maracujá"
+    }
   ],
   "produtos": [
     {
       "id": "sugar-scrub",
       "nome": "Sugar Scrub",
-      "descricao": "Esfoliante corporal — 250ml",
+      "categoria": "Esfoliante corporal",
+      "tamanho": "250ml",
+      "embalagem": "pote",
       "preco": 34.9,
-      "emoji": "🫧",
-      "imagem": "",
       "tag": "hot",
       "ativo": true,
-      "fragrancias": ["maracuja", "seducao", "amora", "banana-split", "vanilla-cream", "love-scent"]
+      "fragrancias": [
+        "maracuja",
+        "seducao",
+        "amora",
+        "banana-split",
+        "vanilla-cream",
+        "love-scent"
+      ],
+      "fotos": [
+        {
+          "src": "imagens/produtos/sugar-scrub-amora-{w}.webp",
+          "larguras": [
+            400,
+            442
+          ],
+          "fragrancia": "amora",
+          "tipo": "produto",
+          "alt": "Sugar Scrub Amora 250ml"
+        },
+        {
+          "src": "imagens/produtos/sugar-scrub-banana-split-{w}.webp",
+          "larguras": [
+            400,
+            442
+          ],
+          "fragrancia": "banana-split",
+          "tipo": "produto",
+          "alt": "Sugar Scrub Banana Split 250ml"
+        },
+        {
+          "src": "imagens/produtos/sugar-scrub-love-scent-{w}.webp",
+          "larguras": [
+            400,
+            480
+          ],
+          "fragrancia": "love-scent",
+          "tipo": "produto",
+          "alt": "Sugar Scrub Love Scent 250ml"
+        },
+        {
+          "src": "imagens/produtos/sugar-scrub-maracuja-textura-{w}.webp",
+          "larguras": [
+            337
+          ],
+          "fragrancia": "maracuja",
+          "tipo": "textura",
+          "alt": "Textura do Sugar Scrub Maracujá, com sementes"
+        }
+      ]
     },
     {
       "id": "sabonete-liquido",
       "nome": "Sabonete Líquido",
-      "descricao": "Limpeza suave — 300ml",
+      "categoria": "Limpeza suave",
+      "tamanho": "300ml",
+      "embalagem": "pump",
       "preco": 24.9,
-      "emoji": "🧴",
-      "imagem": "",
       "tag": "",
       "ativo": true,
-      "fragrancias": ["maracuja", "seducao"]
+      "fragrancias": [
+        "maracuja",
+        "seducao"
+      ],
+      "fotos": []
     },
     {
       "id": "body-splash",
       "nome": "Body Splash",
-      "descricao": "Perfume corporal — 100ml",
+      "categoria": "Perfume corporal",
+      "tamanho": "100ml",
+      "embalagem": "spray",
       "preco": 29.9,
-      "emoji": "💗",
-      "imagem": "",
       "tag": "",
       "ativo": true,
-      "fragrancias": ["maracuja", "seducao"]
+      "fragrancias": [
+        "maracuja",
+        "seducao"
+      ],
+      "fotos": [
+        {
+          "src": "imagens/produtos/body-splash-maracuja-{w}.webp",
+          "larguras": [
+            400,
+            480
+          ],
+          "fragrancia": "maracuja",
+          "tipo": "produto",
+          "alt": "Body Splash Maracujá 100ml"
+        },
+        {
+          "src": "imagens/produtos/body-splash-seducao-{w}.webp",
+          "larguras": [
+            400,
+            480
+          ],
+          "fragrancia": "seducao",
+          "tipo": "produto",
+          "alt": "Body Splash Sedução 100ml"
+        }
+      ]
     },
     {
       "id": "manteiga-corporal",
       "nome": "Manteiga Corporal",
-      "descricao": "Hidratação intensa — 40ml",
+      "categoria": "Hidratação intensa",
+      "tamanho": "40ml",
+      "embalagem": "lata",
       "preco": 19.9,
-      "emoji": "🫙",
-      "imagem": "",
       "tag": "new",
       "ativo": true,
-      "fragrancias": ["maracuja", "seducao"]
+      "fragrancias": [
+        "maracuja",
+        "seducao"
+      ],
+      "fotos": []
     },
     {
       "id": "body-milk",
       "nome": "Body Milk",
-      "descricao": "Hidratante leve — 250ml",
+      "categoria": "Hidratante leve",
+      "tamanho": "250ml",
+      "embalagem": "frasco",
       "preco": 32.9,
-      "emoji": "🥛",
-      "imagem": "",
       "tag": "",
       "ativo": true,
-      "fragrancias": ["seducao"]
+      "fragrancias": [
+        "seducao"
+      ],
+      "fotos": [
+        {
+          "src": "imagens/produtos/body-milk-seducao-{w}.webp",
+          "larguras": [
+            400,
+            442
+          ],
+          "fragrancia": "seducao",
+          "tipo": "produto",
+          "alt": "Body Milk Sedução 250ml"
+        }
+      ]
     },
     {
       "id": "sabonete-argila",
       "nome": "Sabonete Argila Branca",
-      "descricao": "Limpeza profunda — barra",
+      "categoria": "Limpeza profunda",
+      "tamanho": "barra",
+      "embalagem": "barra",
       "preco": 14.9,
-      "emoji": "🧼",
-      "imagem": "",
       "tag": "new",
       "ativo": true,
-      "fragrancias": ["natural"]
+      "fragrancias": [
+        "natural"
+      ],
+      "fotos": []
     }
   ],
   "kits": [
@@ -109,7 +291,6 @@
       "id": "kit-maracuja",
       "nome": "Kit Maracujá",
       "descricao": "O ritual completo com o aroma tropical que você ama. Pele hidratada do chuveiro ao perfume.",
-      "emojis": "🍊✨",
       "itens": [
         "Sugar Scrub Maracujá 250ml",
         "Sabonete Líquido Maracujá",
@@ -119,13 +300,23 @@
       "precoDe": 119.6,
       "preco": 98.0,
       "ativo": true,
-      "destaque": false
+      "destaque": false,
+      "fotos": [
+        {
+          "src": "imagens/kits/kit-maracuja-{w}.webp",
+          "larguras": [
+            400,
+            576
+          ],
+          "tipo": "produto",
+          "alt": "Kit Maracujá: body splash, sabonete líquido, sugar scrub e manteiga corporal"
+        }
+      ]
     },
     {
       "id": "kit-seducao",
       "nome": "Kit Sedução",
       "descricao": "Um toque irresistível do início ao fim. Para quem quer deixar um rastro de aroma marcante por onde passa.",
-      "emojis": "💗🌸",
       "itens": [
         "Sugar Scrub Sedução 250ml",
         "Sabonete Líquido Sedução",
@@ -135,29 +326,52 @@
       "precoDe": 129.6,
       "preco": 105.0,
       "ativo": true,
-      "destaque": true
+      "destaque": true,
+      "fotos": [
+        {
+          "src": "imagens/kits/kit-seducao-{w}.webp",
+          "larguras": [
+            400,
+            504
+          ],
+          "tipo": "produto",
+          "alt": "Kit Sedução: body splash, sabonete líquido, sugar scrub e manteiga corporal"
+        }
+      ]
     },
     {
       "id": "kit-limpeza-natural",
       "nome": "Kit Limpeza Natural",
       "descricao": "Do esfoliante ao sabonete de argila branca. Pele limpa, macia e bem cuidada com o poder da natureza.",
-      "emojis": "🫧🌿",
       "itens": [
-        "Sugar Scrub à escolher 250ml",
+        "Sugar Scrub a escolher 250ml",
         "Sabonete Argila Branca",
-        "Manteiga Corporal à escolher"
+        "Manteiga Corporal a escolher"
       ],
       "precoDe": 89.7,
       "preco": 74.0,
       "ativo": true,
-      "destaque": false
+      "destaque": false,
+      "fotos": []
     }
   ],
   "passos": [
-    { "icone": "🚿", "titulo": "Esfolie", "texto": "Com a pele úmida, aplique o Sugar Scrub em movimentos circulares por 2 a 3 minutos. Enxágue bem." },
-    { "icone": "🧴", "titulo": "Limpe", "texto": "Use o sabonete líquido ou em barra para completar a limpeza. O aroma fica na pele por horas." },
-    { "icone": "💆", "titulo": "Hidrate", "texto": "Ainda com a pele úmida, aplique a manteiga ou body milk. Massageie até absorver completamente." },
-    { "icone": "✨", "titulo": "Perfume", "texto": "Finalize com o Body Splash. Aplique nos pulsos, pescoço e nuca para um aroma suave e duradouro." }
+    {
+      "titulo": "Esfolie",
+      "texto": "Com a pele úmida, aplique o Sugar Scrub em movimentos circulares por 2 a 3 minutos. Enxágue bem."
+    },
+    {
+      "titulo": "Limpe",
+      "texto": "Use o sabonete líquido ou em barra para completar a limpeza. O aroma fica na pele por horas."
+    },
+    {
+      "titulo": "Hidrate",
+      "texto": "Ainda com a pele úmida, aplique a manteiga ou body milk. Massageie até absorver completamente."
+    },
+    {
+      "titulo": "Perfume",
+      "texto": "Finalize com o Body Splash. Aplique nos pulsos, pescoço e nuca para um aroma suave e duradouro."
+    }
   ],
   "depoimentos": []
 }
